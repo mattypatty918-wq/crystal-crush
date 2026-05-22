@@ -1,23 +1,23 @@
-# Codemagic CI/CD for gem-crush-game
+# Codemagic CI/CD for CrystalCrush
 workflows:
   ios-workflow:
     name: iOS
     max_build_duration: 60
     environment:
       vars:
-        XCODE_VERSION: "16.0"
-        APP_NAME: "gem-crush-game"
+        XCODE_VERSION: "15.0"
+        APP_NAME: "CrystalCrush"
     triggering:
       branch_patterns:
         - pattern: master
           include: true
     scripts:
-      - git clone https://github.com/mattypatty918-wq/gem-crush-game.git --depth 1
-      - cd gem-crush-game && git submodule update --init --recursive
-      - cd gem-crush-game && xcode-project fetch-dependencies --use-cache
-      - cd gem-crush-game && xcode-project build --workspace ios/GemCrush.xcworkspace --scheme GemCrush --configuration Release
+      - git clone https://github.com/mattypatty918-wq/crystal-crush.git --depth 1
+      - cd crystal-crush && git submodule update --init --recursive
+      - cd crystal-crush && xcode-project fetch-dependencies --use-cache
+      - cd crystal-crush && xcode-project build --workspace ios/App.xcworkspace --scheme App --configuration Release
     artifacts:
-      - gem-crush-game/ios/*.ipa
+      - crystal-crush/ios/App/App.xcarchive
     publishing:
       app_store_connect:
         api_key: Whitefoxes
