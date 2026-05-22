@@ -51,7 +51,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-blue-900 to-black flex flex-col items-center justify-center p-4">
-      <h1 className="text-4xl font-bold text-white mb-2">💎 Gem Burst</h1>
+      <h1 className="text-4xl font-bold text-white mb-2">💎 Gem Burst Rush</h1>
       <p className="text-blue-300 mb-4">Score: {score}</p>
       <button onClick={init} className="mb-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold">New Game</button>
       <div className="grid" style={{ gridTemplateColumns: 'repeat(' + COLS + ', 1fr)' }}>

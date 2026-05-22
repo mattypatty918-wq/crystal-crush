@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gem Burst Rush</string>
+    <string name="title_activity_main">Gem Burst Rush</string>
+    <string name="package_name">com.mattypattysapps.gemburstrush</string>
+    <string name="custom_url_scheme">com.mattypattysapps.gemburstrush</string>
+</resources>
